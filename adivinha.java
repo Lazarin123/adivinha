@@ -8,18 +8,20 @@ public class adivinha {
             Scanner scanner = new Scanner(System.in);
             String Letra = scanner.nextLine(); 
 
-            if (Letra == "a") {
-                System.out.println("Você digitou a Letra " + Letra + ", ela é uma vogal.");
-            } else if (Letra == "e") {
-                System.out.println("Você digitou a Letra " + Letra + ", ela é uma vogal.");
-            } else if (Letra == "i") {
-                System.out.println("Você digitou a Letra " + Letra + ", ela é uma vogal.");
-            } else if (Letra == "o") {
-                System.out.println("Você digitou a Letra " + Letra + ", ela é uma vogal.");
-            } else if (Letra == "u") {
-                System.out.println("Você digitou a Letra " + Letra + ", ela é uma vogal.");
-            } else {
-                System.out.println("Você digitou a Letra " + Letra + ", ela é uma consoante.");
+            switch (Letra) {
+                case "a": System.out.println("Você digitou a Letra " + Letra + ", ela é uma vogal.");
+                break;
+                case "e": System.out.println("Você digitou a Letra " + Letra + ", ela é uma vogal.");
+                break;
+                case "i": System.out.println("Você digitou a Letra " + Letra + ", ela é uma vogal.");
+                break;
+                case "o": System.out.println("Você digitou a Letra " + Letra + ", ela é uma vogal.");
+                break;
+                case "u": System.out.println("Você digitou a Letra " + Letra + ", ela é uma vogal.");
+                    break;
+                default:
+                    System.out.println("Você digitou a Letra " + Letra + ", ela é uma consoante.");
+                    break;
             }    
     }
 }
